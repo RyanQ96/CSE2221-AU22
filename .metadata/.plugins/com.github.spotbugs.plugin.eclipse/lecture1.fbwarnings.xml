@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.1" sequence="11" timestamp="1661391521330" analysisTimestamp="1661391520416" release="">
+<BugCollection version="4.7.1" sequence="17" timestamp="1661393933319" analysisTimestamp="1661393932812" release="">
   <Project projectName="lecture1">
     <Jar>/Users/qiurui/Downloads/workspace-2022-autum/lecture1/bin/HelloWorld.class</Jar>
     <AuxClasspathEntry>/Users/qiurui/Downloads/workspace-2022-autum/lecture1/bin</AuxClasspathEntry>
@@ -76,20 +76,29 @@
     <String value="0.200000000000000011102230246251565404236316680908203125"/>
     <SourceLine classname="HelloWorld" start="34" end="34" startBytecode="52" endBytecode="52" sourcefile="HelloWorld.java" sourcepath="HelloWorld.java"/>
   </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="14" last="14" removedByChange="true">
+    <Class classname="HelloWorld">
+      <SourceLine classname="HelloWorld" sourcefile="HelloWorld.java" sourcepath="HelloWorld.java"/>
+    </Class>
+    <Method classname="HelloWorld" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="HelloWorld" start="28" end="41" startBytecode="0" endBytecode="187" sourcefile="HelloWorld.java" sourcepath="HelloWorld.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="66" end="67" startBytecode="0" endBytecode="68" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="HelloWorld" start="31" end="31" startBytecode="14" endBytecode="14" sourcefile="HelloWorld.java" sourcepath="HelloWorld.java"/>
+    <SourceLine classname="HelloWorld" start="31" end="31" startBytecode="14" endBytecode="14" sourcefile="HelloWorld.java" sourcepath="HelloWorld.java"/>
+  </BugInstance>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Wed, 24 Aug 2022 21:38:40 -0400" total_classes="1" referenced_classes="16" total_bugs="0" total_size="17" num_packages="1" java_version="16.0.2" vm_version="16.0.2+7-67" cpu_seconds="2.68" clock_seconds="0.93" peak_mbytes="1130.73" alloc_mbytes="2048.00" gc_seconds="0.01">
-    <PackageStats package="" total_bugs="0" total_types="1" total_size="17">
-      <ClassStats class="HelloWorld" sourceFile="HelloWorld.java" interface="false" size="17" bugs="0"/>
+  <FindBugsSummary timestamp="Wed, 24 Aug 2022 22:18:52 -0400" total_classes="1" referenced_classes="15" total_bugs="0" total_size="9" num_packages="1" java_version="16.0.2" vm_version="16.0.2+7-67" cpu_seconds="0.93" clock_seconds="0.51" peak_mbytes="1146.09" alloc_mbytes="2048.00" gc_seconds="0.00">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="9">
+      <ClassStats class="HelloWorld" sourceFile="HelloWorld.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="189" invocations="2" avgMicrosecondsPerInvocation="94520" maxMicrosecondsPerInvocation="139694" standardDeviationMicrosecondsPerInvocation="45174"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="175" invocations="16" avgMicrosecondsPerInvocation="10967" maxMicrosecondsPerInvocation="143632" standardDeviationMicrosecondsPerInvocation="34712"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="94" invocations="356" avgMicrosecondsPerInvocation="266" maxMicrosecondsPerInvocation="5884" standardDeviationMicrosecondsPerInvocation="624"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="73" invocations="16" avgMicrosecondsPerInvocation="4574" maxMicrosecondsPerInvocation="55856" standardDeviationMicrosecondsPerInvocation="13512"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="45" invocations="77" avgMicrosecondsPerInvocation="584" maxMicrosecondsPerInvocation="10265" standardDeviationMicrosecondsPerInvocation="1472"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="42" invocations="16" avgMicrosecondsPerInvocation="2682" maxMicrosecondsPerInvocation="23744" standardDeviationMicrosecondsPerInvocation="6036"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="41" invocations="357" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="3966" standardDeviationMicrosecondsPerInvocation="272"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="38" invocations="16" avgMicrosecondsPerInvocation="2409" maxMicrosecondsPerInvocation="10868" standardDeviationMicrosecondsPerInvocation="3304"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="187" invocations="2" avgMicrosecondsPerInvocation="93968" maxMicrosecondsPerInvocation="170700" standardDeviationMicrosecondsPerInvocation="76732"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="113" invocations="347" avgMicrosecondsPerInvocation="326" maxMicrosecondsPerInvocation="14807" standardDeviationMicrosecondsPerInvocation="1052"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="41" invocations="348" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="6480" standardDeviationMicrosecondsPerInvocation="392"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="34" invocations="15" avgMicrosecondsPerInvocation="2325" maxMicrosecondsPerInvocation="9441" standardDeviationMicrosecondsPerInvocation="2820"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
@@ -105,5 +114,11 @@
     <AppVersion sequence="8" timestamp="1661391392161" release="" codeSize="6" numClasses="1"/>
     <AppVersion sequence="9" timestamp="1661391409076" release="" codeSize="15" numClasses="1"/>
     <AppVersion sequence="10" timestamp="1661391460289" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1661391521330" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1661391818730" release="" codeSize="8" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1661391888226" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1661392012339" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1661392052563" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1661392056564" release="" codeSize="12" numClasses="1"/>
   </History>
 </BugCollection>

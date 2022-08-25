@@ -1,5 +1,3 @@
-import java.math.BigDecimal;
-
 import components.simplewriter.SimpleWriter;
 import components.simplewriter.SimpleWriter1L;
 
@@ -25,18 +23,8 @@ public final class HelloWorld {
      */
     public static void main(String[] args) {
         SimpleWriter out = new SimpleWriter1L();
-//        out.println("Hello World!");
-        char a = 'a';
-        char b = 'b';
-        out.println(b - a);
-        BigDecimal aa = new BigDecimal("0.1");
-        BigDecimal bb = new BigDecimal("0.2");
-        double aa1 = .1;
-        double aa2 = .2;
-        out.println(aa1 + aa2);
-        out.println(aa.add(bb));
+        out.println("Hello World");
         out.close();
-//        System.out.println("123");
     }
 
 }
